@@ -1,0 +1,22 @@
+[11/24, 10:41 PM] Tharun MNO: minikube start
+# optional: check status
+minikube status
+[11/24, 10:41 PM] Tharun MNO: kubectl create deployment nginx-deploy --image=nginx
+[11/24, 10:41 PM] Tharun MNO: kubectl get pods
+[11/24, 10:41 PM] Tharun MNO: kubectl expose deployment nginx-deploy --port=80 --target-port=80
+kubectl get svc
+[11/24, 10:41 PM] Tharun MNO: kubectl port-forward svc/nginx-deploy 8090:80
+[11/24, 10:41 PM] Tharun MNO: Open browser: http://localhost:8090
+[11/24, 10:41 PM] Tharun MNO: new terminal
+[11/24, 10:41 PM] Tharun MNO: kubectl get pods
+kubectl get svc
+[11/24, 10:41 PM] Tharun MNO: q3
+[11/24, 10:41 PM] Tharun MNO: docker pull jasonrivers/nagios
+[11/24, 10:41 PM] Tharun MNO: docker run --name nagios \
+  -d \
+  -p 8080:80 \
+  jasonrivers/nagios
+[11/24, 10:41 PM] Tharun MNO: docker ps
+[11/24, 10:41 PM] Tharun MNO: docker pull jasonrivers/nagios
+docker run --name nagios -d -p 8080:80 jasonrivers/nagios
+docker ps
